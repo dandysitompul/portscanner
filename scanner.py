@@ -15,7 +15,7 @@ else:
 print("_" * 50)
 print("Scanning target "+target)
 print("Time started: "+str(datetime.now()))
-print("_" * 50
+print("_" * 50)
 
 try:
 	for port in range(50,500):
@@ -23,7 +23,7 @@ try:
 		socket.setdefaulttimeout(1)
 		result = s.connect_ex((target,port)) #returns an error indicator
 		if result == 0:
-			print("Hell {} is open".format(port))
+			print("Port {} is rock and roll".format(port))
 		s.close()
 
 except KeyboardInterrupt:
