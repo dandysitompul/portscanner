@@ -23,7 +23,7 @@ try:
 		socket.setdefaulttimeout(1)
 		result = s.connect_ex((target,port)) #returns an error indicator
 		if result == 0:
-			print("Port {} is rock and roll".format(port))
+			print("Port {} is open".format(port))
 		s.close()
 
 except KeyboardInterrupt:
